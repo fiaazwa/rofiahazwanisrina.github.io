@@ -70,22 +70,24 @@ a {
 
 /* button */
 
-
-/* .btn{
-    padding: 1rem 1.5rem;
-    background: white;
-    border: 1.5px solid var(--bordercolor);
+.btn {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primaryiconcolor);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
-    transition: .2s ease-in-out;
-    -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -ms-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.btn:haver{
-box-shadow: rgba(0, 0, 0, 0, 0.04) 0px 3px 5px;
-} */
+.btn:hover {
+    background-color: #a35251;
+    transform: scale(1.05);
+}
 
 
 /* title */
@@ -251,6 +253,8 @@ nav ul li a {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     justify-content: center;
 }
@@ -266,7 +270,9 @@ nav ul li a {
 .project-card img {
     width: 100%;
     height: auto;
+    max-width: 500px;
     display: block;
+    margin: 0 auto;
 }
 
 .project-info {
@@ -340,4 +346,14 @@ nav ul li a {
     padding-right: 10px;
     border-radius: 25px;
     line-height: 20px;
+}
+
+
+/* poster produk */
+
+.poster-large {
+    width: 1260px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
